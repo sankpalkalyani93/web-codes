@@ -1,0 +1,89 @@
+<!Doctype html>
+
+<head>
+	<title> Login-Form </title>
+
+	<style>
+		
+		form{
+
+			border: 3px solid grey;
+		}	
+	
+		input[type=text], input[type=password]{
+			
+			width: 100%;
+			padding: 12px 20px;
+			border: 2px solid;
+			box-sizing: border-box;
+			margin: 10px 0;
+		}		
+		
+		button{
+
+			background-color: #04aa6d;
+			color: white;
+			padding: 15px 20px;
+			margin: 10px 0;
+			border: none;
+			width: 100%;
+		}
+
+		.container{
+			padding: 15px;
+		}
+
+		img.nature{
+
+			width: 20%;
+			border-radius: 50%;
+		}
+
+		.imgcontainer{
+
+			text-align: center;
+			margin: 20px 0 15px 0;
+		}
+	
+		.cancelbutton{
+
+			width: auto;
+			padding: 15px 20px;
+			background-color: #ff0000;
+		}
+
+		span.forgotpass{
+
+			float: right;
+			padding-top: 20px;
+		}
+	</style>
+</head>
+
+	<body>
+	
+	<form method="post">
+	<div class="imgcontainer">
+		<img src="./images/studentlogo.jpg" class="nature">
+
+	</div>
+
+
+	<div class="container">
+		<label for="uname">Username</label>
+		<input type="text" name="uname">
+
+		<label for="password">Password</label>
+		<input type="password" name="password">
+
+		<button type="submit">Login</button>
+	
+	</div>
+
+	<div class="container">
+		<button type="submit" class="cancelbutton">Cancel</button>
+		<span class="forgotpass">Forgot <a href="#">Password?</a></span>
+	</div>
+	</form>
+	</body>
+</html>
